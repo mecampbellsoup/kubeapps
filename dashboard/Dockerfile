@@ -4,8 +4,8 @@ WORKDIR /app
 COPY package.json yarn.lock /app/
 RUN yarn install --frozen-lockfile
 
-RUN mkdir /app/src
-COPY . /app
+COPY src ./src
+COPY . ./
 RUN yarn run prettier-check && yarn run ts-compile-check
 RUN yarn run build
 
