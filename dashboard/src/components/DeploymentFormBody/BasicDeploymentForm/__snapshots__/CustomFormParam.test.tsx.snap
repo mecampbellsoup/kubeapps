@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a custom form component 1`] = `
+<CustomFormComponentLoader
+  handleBasicFormParamChange={[MockFunction]}
+  param={
+    Object {
+      "customComponent": Object {
+        "className": "test",
+      },
+      "path": "enableMetrics",
+      "type": "boolean",
+      "value": true,
+    }
+  }
+>
+  <remoteComponent
+    handleBasicFormParamChange={[MockFunction]}
+    param={
+      Object {
+        "customComponent": Object {
+          "className": "test",
+        },
+        "path": "enableMetrics",
+        "type": "boolean",
+        "value": true,
+      }
+    }
+    url="../../../../../docs/developer/examples/custom_components.js/custom_components.js"
+  />
+</CustomFormComponentLoader>
+`;
