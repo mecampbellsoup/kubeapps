@@ -465,15 +465,13 @@ dashboard:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes
   ##
   livenessProbe:
-    httpGet:
-      path: /
-      port: 8080
+    tcpSocket:
+      port: http
     initialDelaySeconds: 60
     timeoutSeconds: 5
   readinessProbe:
-    httpGet:
-      path: /
-      port: 8080
+    tcpSocket:
+      port: http
     initialDelaySeconds: 0
     timeoutSeconds: 5
   ## Dashboard containers' resource requests and limits
