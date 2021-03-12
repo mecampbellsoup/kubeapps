@@ -1,7 +1,7 @@
 FROM bitnami/node:12.20.0 AS build
 WORKDIR /app
 
-COPY package.json yarn.lock /app/
+COPY package.json yarn.lock ./
 RUN yarn install --frozen-lockfile
 
 COPY src ./src
